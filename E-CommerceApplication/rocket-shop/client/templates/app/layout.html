@@ -1,0 +1,11 @@
+<template name = 'layout'>  
+  <!-- The line below actually is telling Meteor that there is template defined
+    by the name 'nav' somewhere in this project. Look for it and render it at this location.
+  -->
+  {{> nav}}
+  <!-- Tells meteor to load content based on the urls. Refer router.js file.
+  	   Template that it renders is the 'name' parameter of the route in router.js
+  -->
+  {{>yield}}
+  
+</template>
